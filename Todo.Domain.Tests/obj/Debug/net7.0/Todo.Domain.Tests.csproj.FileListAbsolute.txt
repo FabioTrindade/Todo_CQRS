@@ -1,3 +1,9 @@
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/CoverletSourceRootsMapping
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.csproj.AssemblyReference.cache
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.AssemblyInfoInputs.cache
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.AssemblyInfo.cs
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.csproj.CoreCompileInputs.cache
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -6,6 +12,7 @@
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Todo.Domain.Tests.runtimeconfig.json
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Todo.Domain.Tests.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Todo.Domain.Tests.pdb
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Flunt.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -84,12 +91,9 @@
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Todo.Domain.dll
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Todo.Domain.pdb
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/bin/Debug/net7.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.csproj.AssemblyReference.cache
-/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.AssemblyInfoInputs.cache
-/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.AssemblyInfo.cs
-/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.csproj.CoreCompileInputs.cache
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.csproj.CopyComplete
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/Todo.Domain.Tests.dll
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Tests/obj/Debug/net7.0/refint/Todo.Domain.Tests.dll
