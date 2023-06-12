@@ -6,14 +6,14 @@ using Todo.Domain.Tests.Repositories;
 namespace Todo.Domain.Tests.HandlerTests;
 
 [TestClass]
-public class CreateTodoHandlerTest
+public class MarkAsUndoneTodoHandlerTest
 {
-    private readonly CreateTodoCommand _invalidCommand = new("", DateTime.Now, "");
-    private readonly CreateTodoCommand _validCommand = new("Titulo da tarefa", DateTime.Now, "Fábio Trindade");
+    private readonly MarkTodoAsUndoneCommand _invalidCommand = new(Guid.NewGuid(), "");
+    private readonly MarkTodoAsUndoneCommand _validCommand = new(Guid.NewGuid(), "Fábio Trindade");
     private readonly TodoHandler _handler = new(new FakeTodoRepository());
     private GenericCommandResult _result = new();
 
-    public CreateTodoHandlerTest() { }
+    public MarkAsUndoneTodoHandlerTest() { }
 
     [TestMethod]
     public void Given_an_invalid_command_must_interrupt_execution()
@@ -23,7 +23,7 @@ public class CreateTodoHandlerTest
     }
 
     [TestMethod]
-    public void Given_an_valid_command_create_todo()
+    public void Given_an_valid_command_mark_as_undone_todo()
     {
         _result = (GenericCommandResult)_handler.Handler(_validCommand);
         Assert.AreEqual(_result.Success, true);
