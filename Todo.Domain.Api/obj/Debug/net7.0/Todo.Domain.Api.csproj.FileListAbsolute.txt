@@ -31,3 +31,8 @@
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/obj/Debug/net7.0/Todo.Domain.Api.pdb
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/obj/Debug/net7.0/Todo.Domain.Api.genruntimeconfig.cache
 /Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/obj/Debug/net7.0/ref/Todo.Domain.Api.dll
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/bin/Debug/net7.0/Flunt.dll
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/bin/Debug/net7.0/Todo.Domain.dll
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/bin/Debug/net7.0/Todo.Domain.Infra.dll
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/bin/Debug/net7.0/Todo.Domain.pdb
+/Users/fabiotrindade/Dev/7196/Todo/Todo.Domain.Api/bin/Debug/net7.0/Todo.Domain.Infra.pdb

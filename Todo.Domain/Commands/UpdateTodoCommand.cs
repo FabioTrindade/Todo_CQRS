@@ -8,7 +8,7 @@ public class UpdateTodoCommand : Notifiable<Notification>, ICommand
 {
     public UpdateTodoCommand () { }
 
-    public UpdateTodoCommand(Guid? id
+    public UpdateTodoCommand(Guid id
         , string? title
         , string? user)
     {
@@ -17,7 +17,7 @@ public class UpdateTodoCommand : Notifiable<Notification>, ICommand
         User = user;
     }
 
-    public Guid? Id { get; set; }
+    public Guid Id { get; set; }
 
     public string? Title { get; set; }
 
