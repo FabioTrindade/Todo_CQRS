@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Todo.Domain.Entities;
 
-public class DataContext : DbContext
+namespace Todo.Domain.Infra.Contexts;
+
+public class TodoDataContext : DbContext
 {
-    public DataContext(DbContextOptions<DataContext> options) : base()
+    public TodoDataContext(DbContextOptions<TodoDataContext> options) : base(options)
     {
     }
 
