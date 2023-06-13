@@ -47,7 +47,7 @@ public class TodoRepository : ITodoRepository
     public TodoItem GetById(Guid id, string user)
         => _context
                 .Todos
-                .FirstOrDefault(w => w.Id == id && w.User == user);
+                .FirstOrDefault(TodoQueries.GetById(id, user));
 
     public IEnumerable<TodoItem> GetPeriod(string user, DateTime date, bool done)
         => _context
