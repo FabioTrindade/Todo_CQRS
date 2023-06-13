@@ -10,7 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<TodoDataContext>(opt => opt.UseInMemoryDatabase("Database"));
+// builder.Services.AddDbContext<TodoDataContext>(opt => opt.UseInMemoryDatabase("Database"));
+builder.Services.AddDbContext<TodoDataContext>(options
+    => options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
 
 builder.Services.AddTransient<ITodoRepository, TodoRepository>();
 builder.Services.AddTransient<TodoHandler, TodoHandler>();
