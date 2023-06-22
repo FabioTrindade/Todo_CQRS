@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Todo.Domain.Configurations;
 using Todo.Domain.Handlers;
 using Todo.Domain.Infra.Contexts;
 using Todo.Domain.Infra.Repositories;
@@ -16,6 +19,22 @@ builder.Services.AddDbContext<TodoDataContext>(options
 
 builder.Services.AddTransient<ITodoRepository, TodoRepository>();
 builder.Services.AddTransient<TodoHandler, TodoHandler>();
+
+var authenticationSettings = new AuthenticationSettings();
+builder.Configuration.GetSection(nameof(AuthenticationSettings)).Bind(authenticationSettings);
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options => {
+        options.Authority = authenticationSettings.Authority;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = authenticationSettings.ValidateIssuer,
+            ValidIssuer = authenticationSettings.ValidIssuer,
+            ValidateAudience = authenticationSettings.ValidateAudience,
+            ValidAudience = authenticationSettings.ValidAudience,
+            ValidateLifetime = authenticationSettings.ValidateLifetime
+        };
+    });
 
 var app = builder.Build();
 
