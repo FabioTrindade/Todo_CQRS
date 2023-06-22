@@ -13,10 +13,10 @@ public class TodoQueryTest
     {
         _items = new List<TodoItem>
         {
-            new TodoItem("Tarefa 1", DateTime.Now, "Fábio Trindade"),
-            new TodoItem("Tarefa 2", DateTime.Now, "Fábio Trindade"),
-            new TodoItem("Tarefa 3", DateTime.Now, "Bruna Trindade"),
-            new TodoItem("Tarefa 4", DateTime.Now, "Bruna Trindade"),
+            new TodoItem("Tarefa 1", "Fábio Trindade"),
+            new TodoItem("Tarefa 2", "Fábio Trindade"),
+            new TodoItem("Tarefa 3", "Bruna Trindade"),
+            new TodoItem("Tarefa 4", "Bruna Trindade"),
         };
     }
 

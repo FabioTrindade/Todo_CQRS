@@ -19,7 +19,7 @@ public static class TodoQueries
         => t =>
             t.User == user &&
             t.Done == done &&
-            t.Date.Date == date.Date;
+            t.CreatedAt.Date == date.Date;
 
     public static Expression<Func<TodoItem, bool>> GetById(Guid id, string user)
         => t =>

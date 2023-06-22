@@ -32,7 +32,7 @@ public class TodoHandler :
                 command.Notifications
             );
 
-        var todo = new TodoItem(command.Title, command.Date, command.User);
+        var todo = new TodoItem(command.Title, command.User);
         
         _repository.Create(todo);
 

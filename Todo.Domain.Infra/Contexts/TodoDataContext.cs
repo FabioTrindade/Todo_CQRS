@@ -18,7 +18,7 @@ public class TodoDataContext : DbContext
         builder.Entity<TodoItem>().Property(p => p.User).HasMaxLength(120).HasColumnType("varchar(120)");
         builder.Entity<TodoItem>().Property(p => p.Title).HasMaxLength(160).HasColumnType("varchar(160)");
         builder.Entity<TodoItem>().Property(p => p.Done).HasColumnType("bit");
-        builder.Entity<TodoItem>().Property(p => p.Date);
+        builder.Entity<TodoItem>().Property(p => p.CreatedAt).HasColumnType("datetime");
         builder.Entity<TodoItem>().HasIndex(i => i.User);
     }
 }

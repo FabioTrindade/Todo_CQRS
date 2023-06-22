@@ -8,8 +8,8 @@ namespace Todo.Domain.Tests.HandlerTests;
 [TestClass]
 public class CreateTodoHandlerTest
 {
-    private readonly CreateTodoCommand _invalidCommand = new("", DateTime.Now, "");
-    private readonly CreateTodoCommand _validCommand = new("Titulo da tarefa", DateTime.Now, "Fábio Trindade");
+    private readonly CreateTodoCommand _invalidCommand = new("", "");
+    private readonly CreateTodoCommand _validCommand = new("Titulo da tarefa", "Fábio Trindade");
     private readonly TodoHandler _handler = new(new FakeTodoRepository());
     private GenericCommandResult _result = new();
 

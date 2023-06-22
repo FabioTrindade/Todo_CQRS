@@ -26,7 +26,7 @@ public class FakeTodoRepository : ITodoRepository
 
     public TodoItem GetById(Guid id, string user)
     {
-       return new TodoItem("", DateTime.Now, "");
+       return new TodoItem("", "");
     }
 
     public IEnumerable<TodoItem> GetPeriod(string user, DateTime date, bool done)

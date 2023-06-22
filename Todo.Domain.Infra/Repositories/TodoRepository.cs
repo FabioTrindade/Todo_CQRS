@@ -27,7 +27,7 @@ public class TodoRepository : ITodoRepository
                 .Todos
                 .AsNoTracking()
                 .Where(TodoQueries.GetAll(user))
-                .OrderBy(o => o.Date);
+                .OrderBy(o => o.CreatedAt);
 
 
     public IEnumerable<TodoItem> GetAllDone(string user)
@@ -35,14 +35,14 @@ public class TodoRepository : ITodoRepository
                 .Todos
                 .AsNoTracking()
                 .Where(TodoQueries.GetAllDone(user))
-                .OrderBy(o => o.Date);
+                .OrderBy(o => o.CreatedAt);
 
     public IEnumerable<TodoItem> GetAllUndone(string user)
         => _context
                 .Todos
                 .AsNoTracking()
                 .Where(TodoQueries.GetAllUndone(user))
-                .OrderBy(o => o.Date);
+                .OrderBy(o => o.CreatedAt);
 
     public TodoItem GetById(Guid id, string user)
         => _context
@@ -54,7 +54,7 @@ public class TodoRepository : ITodoRepository
                 .Todos
                 .AsNoTracking()
                 .Where(TodoQueries.GetPeriod(user, date, done))
-                .OrderBy(o => o.Date);
+                .OrderBy(o => o.CreatedAt);
 
     public void Update(TodoItem todo)
     {

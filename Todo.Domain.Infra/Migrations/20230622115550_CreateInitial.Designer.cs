@@ -12,8 +12,8 @@ using Todo.Domain.Infra.Contexts;
 namespace Todo.Domain.Infra.Migrations
 {
     [DbContext(typeof(TodoDataContext))]
-    [Migration("20230613224538_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230622115550_CreateInitial")]
+    partial class CreateInitial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,8 +31,8 @@ namespace Todo.Domain.Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime");
 
                     b.Property<bool>("Done")
                         .HasColumnType("bit");
